@@ -1,9 +1,9 @@
-let katherineAnderson = {
+export let katherineAnderson = {
     name: "Katherine Anderson",
     subjects: []
 }
 
-let benjaminHughes = {
+export let benjaminHughes = {
     name: "Benjamin Hughes",
     subjects: []
 }

@@ -1,16 +1,16 @@
-let mathematics = {
+export let mathematics = {
     name: "Mathematics",
     students: [],
     teacher: {}
 }
 
-let programming = {
+export let programming = {
     name: "Programming",
     students: [],
     teacher: {}
 }
 
-let english = {
+export let english = {
     name: "English",
     students: [],
     teacher: {}

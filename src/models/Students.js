@@ -1,32 +1,32 @@
-let jonatanDrysen = {
+export let jonatanDrysen = {
     name: "Jonatan Drysén",
     age: "21",
     gender: "male",
     subjects: []
 }
 
-let johnDoe = {
+export let johnDoe = {
     name: "John Doe",
     age: "30",
     gender: "male",
     subjects: []
 }
 
-let janeDoe = {
+export let janeDoe = {
     name: "Jane Doe",
     age: "27",
     gender: "female",
     subjects: []
 }
 
-let alexJohnson = {
+export let alexJohnson = {
     name: "Alex Johnson",
     age: "12",
     gender: "male",
     subjects: []
 }
 
-let emilyMiller = {
+export let emilyMiller = {
     name: "emilyMiller",
     age: "25",
     gender: "female",
