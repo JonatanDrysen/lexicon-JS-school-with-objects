@@ -16,8 +16,16 @@ import {
     benjaminHughes 
 } from "./models/Teachers.js"
 
+/* 
+    i'm gonna use the name property when referencing objects to other object properties
+    insted of referencing the object itself. This would not be realistic in a real sense
+    because you would need to use cross-referencing, eg. use the object itself, which
+    allows for easier access to all the data. But since it's a simple task, i'm gonna
+    skip that complexity for now.
+*/
+
 // task 5
-katherineAnderson.subjects.push(mathematics)
+katherineAnderson.subjects.push(mathematics.name)
 mathematics.teacher = katherineAnderson.name
 console.log("task 5: ", katherineAnderson)
 /*
@@ -33,3 +41,7 @@ console.log("task 5: ", katherineAnderson)
     actual database to store the data, and the system would need to be alot more robust.
 */
 
+// task 6
+programming.students.push(jonatanDrysen.name)
+jonatanDrysen.subjects.push(programming.name)
+console.log("task 6: ", programming)
