@@ -16,17 +16,9 @@ import {
     benjaminHughes 
 } from "./models/Teachers.js"
 
-/* 
-    i'm gonna use the name property when referencing objects to other object properties
-    insted of referencing the object itself. This would not be realistic in a real sense
-    because you would need to use cross-referencing, eg. use the object itself, which
-    allows for easier access to all the data. But since it's a simple task, i'm gonna
-    skip that complexity for now.
-*/
-
 // task 5
-katherineAnderson.subjects.push(mathematics.name)
-mathematics.teacher = katherineAnderson.name
+katherineAnderson.subjects.push(mathematics)
+mathematics.teacher = katherineAnderson
 console.log("task 5: ", katherineAnderson)
 /*
     I used push() instead of unshift() since there's no reason to add from the 
@@ -45,3 +37,16 @@ console.log("task 5: ", katherineAnderson)
 programming.students.push(jonatanDrysen.name)
 jonatanDrysen.subjects.push(programming.name)
 console.log("task 6: ", programming)
+
+// task 7
+function addSubjectToTeacher() {
+    english.teacher = benjaminHughes
+    benjaminHughes.subjects.push(english)
+    console.log("task 7: ", benjaminHughes)
+}
+addSubjectToTeacher()
+
+// task 8
+benjaminHughes.addSubject(programming)
+programming.teacher = benjaminHughes
+console.log("task 8: ", benjaminHughes)

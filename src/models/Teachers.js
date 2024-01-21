@@ -1,9 +1,15 @@
+function addTeacherSubject(subject) {
+    this.subjects.push(subject)
+}
+
 export let katherineAnderson = {
     name: "Katherine Anderson",
-    subjects: []
+    subjects: [],
+    addSubject: addTeacherSubject
 }
 
 export let benjaminHughes = {
     name: "Benjamin Hughes",
-    subjects: []
+    subjects: [],
+    addSubject: addTeacherSubject
 }
