@@ -61,3 +61,12 @@ lexicon.addStudent(jonatanDrysen, johnDoe, janeDoe, alexJohnson, emilyMiller)
 
 lexicon.addSubject(programming, english, mathematics)
 console.log("task 9: ", lexicon)
+
+// task 10
+/*
+    some similarities between this program and a real admin interface for a school 
+    is the basic idea of object management in the teacher, student, and subject 
+    object for example. all of these objects have cross-referenced properties that 
+    bind them together and make administrative tasks easier, albeit still primitive 
+    in this example.
+*/
