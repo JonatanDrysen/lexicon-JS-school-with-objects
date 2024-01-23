@@ -84,3 +84,8 @@ mathematics.removeTeacher(katherineAnderson)
 lexicon.relegateStudent(alexJohnson)
 
 console.log("task 11: ", lexicon)
+
+// task 12
+/* *playing around with methods yay i'm having a blast.* */
+
+// task 13
