@@ -34,8 +34,8 @@ console.log("task 5: ", katherineAnderson)
 */
 
 // task 6
-programming.students.push(jonatanDrysen.name)
-jonatanDrysen.subjects.push(programming.name)
+programming.students.push(jonatanDrysen)
+jonatanDrysen.subjects.push(programming)
 console.log("task 6: ", programming)
 
 // task 7
@@ -50,3 +50,14 @@ addSubjectToTeacher()
 benjaminHughes.addSubject(programming)
 programming.teacher = benjaminHughes
 console.log("task 8: ", benjaminHughes)
+
+// task 9
+lexicon.addTeacher(katherineAnderson, benjaminHughes)
+
+jonatanDrysen.enlistToSubject(english)
+english.students.push(jonatanDrysen)
+
+lexicon.addStudent(jonatanDrysen, johnDoe, janeDoe, alexJohnson, emilyMiller)
+
+lexicon.addSubject(programming, english, mathematics)
+console.log("task 9: ", lexicon)
