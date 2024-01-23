@@ -1,5 +1,12 @@
-function addStudentSubject(subject) {
-    this.subjects.push(subject)
+function addStudentSubject(...subject) {
+    this.subjects.push(...subject)
+}
+
+function quitStudentSubject(subject) {
+    if(this.subjects.includes(subject)) {
+        this.subjects = this.subjects.filter(item => item.name !== subject.name)
+    }
+    return;
 }
 
 export let jonatanDrysen = {
@@ -7,7 +14,8 @@ export let jonatanDrysen = {
     age: "21",
     gender: "male",
     subjects: [],
-    enlistToSubject: addStudentSubject
+    enlistToSubject: addStudentSubject,
+    quitSubject: quitStudentSubject
 }
 
 export let johnDoe = {
@@ -15,7 +23,8 @@ export let johnDoe = {
     age: "30",
     gender: "male",
     subjects: [],
-    enlistToSubject: addStudentSubject
+    enlistToSubject: addStudentSubject,
+    quitSubject: quitStudentSubject
 }
 
 export let janeDoe = {
@@ -23,7 +32,8 @@ export let janeDoe = {
     age: "27",
     gender: "female",
     subjects: [],
-    enlistToSubject: addStudentSubject
+    enlistToSubject: addStudentSubject,
+    quitSubject: quitStudentSubject
 }
 
 export let alexJohnson = {
@@ -31,7 +41,8 @@ export let alexJohnson = {
     age: "12",
     gender: "male",
     subjects: [],
-    enlistToSubject: addStudentSubject
+    enlistToSubject: addStudentSubject,
+    quitSubject: quitStudentSubject
 }
 
 export let emilyMiller = {
@@ -39,5 +50,6 @@ export let emilyMiller = {
     age: "25",
     gender: "female",
     subjects: [],
-    enlistToSubject: addStudentSubject
+    enlistToSubject: addStudentSubject,
+    quitSubject: quitStudentSubject
 }

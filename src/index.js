@@ -70,3 +70,17 @@ console.log("task 9: ", lexicon)
     bind them together and make administrative tasks easier, albeit still primitive 
     in this example.
 */
+
+// task 11
+jonatanDrysen.quitSubject(english)
+english.removeStudent(jonatanDrysen)
+
+benjaminHughes.removeSubject(programming)
+programming.removeTeacher(benjaminHughes)
+
+lexicon.fireTeacher(katherineAnderson)
+mathematics.removeTeacher(katherineAnderson)
+
+lexicon.relegateStudent(alexJohnson)
+
+console.log("task 11: ", lexicon)

@@ -6,8 +6,22 @@ function addSchoolStudent(...students) {
     this.students.push(...students)
 }
 
-function addSchoolSubject(...subject) {
-    this.subjects.push(...subject)
+function addSchoolSubject(...subjects) {
+    this.subjects.push(...subjects)
+}
+
+function relegateSchoolStudent(student) {
+    if(this.students.includes(student)) {
+        this.students = this.students.filter(item => item !== student)
+    }
+    return;
+}
+
+function fireSchoolTeacher(teacher) {
+    if(this.teachers.includes(teacher)) {
+        this.teachers = this.teachers.filter(item => item !== teacher)
+    }
+    return;
 }
 
 export let lexicon = {
@@ -20,5 +34,7 @@ export let lexicon = {
     subjects: [],
     addTeacher: addSchoolTeacher,
     addStudent: addSchoolStudent,
-    addSubject: addSchoolSubject
+    addSubject: addSchoolSubject,
+    relegateStudent: relegateSchoolStudent,
+    fireTeacher: fireSchoolTeacher
 }
